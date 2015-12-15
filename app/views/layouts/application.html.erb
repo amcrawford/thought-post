@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Thoughts</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Noto+Serif">
+<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body class="">
+  <nav  role="navigation" id="home-nav">
+    <div class="nav-wrapper">
+      <li class="brand-logo white-text center fancy-font"> Thought Post</li>
+        <ul id="nav-mobile" class="side-nav">
+          <% if current_user %>
+            <li class="black-text">Logged in as: <%= current_user.name %>.</li>
+            <li><%= link_to "Dashboard", user_path(current_user) %></li>
+            <li><%= link_to "Logout", logout_path %></li>
+          <% else %>
+            <li><%= link_to "Login with Twitter", login_path %></li>
+          <% end %>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse show-on-large" >
+          <i class="mdi-navigation-menu"></i>
+        </a>
+    </div>
+  </nav>
+
+<div class="container">
+    <%= yield %>
+</div>
+</body>
+</html>

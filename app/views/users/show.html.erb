@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="card" id="dashboard">
+    <h2 class="fancy-font-caption center"> Your Dashboard</h2>
+      <p>
+        <h4 class="fancy-font-small"> Your Tweets </h4>
+        <% current_user.twitter.user_timeline(:count => 10).each do |tweet| %>
+        <%= tweet.text %>
+        <% end %>
+      </p>
+  </div>
+</div>
