@@ -27,7 +27,11 @@ class TwitterService
   end
 
   def post_tweet(content)
-    client.update(content)
+    client.update(content, options={})
+  end
+
+  def favorite(tweet)
+    client.favorite(tweet)
   end
 
 end

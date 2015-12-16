@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col s3">
-    <%= render partial: 'partials/userside', locals: { twitter: @twitter } %>
+    <%= render partial: 'partials/userside', locals: { twitter: @twitter, tweet: @tweet } %>
   </div>
 
   <div class="col s9">
@@ -10,7 +10,7 @@
           <h2 class="fancy-font-caption center"> Your Tweets </h2>
           <p>
             <% @twitter.user_timeline.each do |tweet| %>
-            <div class="card" style="border:solid">
+            <div class="card" style="border:ridge">
               <div class="row" style="margin-left:24px; margin-top:6px">
                 <div class="col s1" style="">
                   <img src="<%= tweet.user.profile_image_url %>"><br>

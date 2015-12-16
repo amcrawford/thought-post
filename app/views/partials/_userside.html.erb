@@ -3,10 +3,9 @@
   <div class="row">
     <div class="col s12">
       <!--  profile side column -->
-      <div class="row" style="left-margin: 24px">
-
+      <br><div class="row" style="left-margin: 24px">
+        <hr class="intro-divider">
         <center><h4 class="fancy-font-caption"> About Me </h4></center>
-        <hr class="intro-divider"><br>
         <div class="col s2">
           <img src="<%= current_user.profile_image %>">
         </div>
@@ -24,7 +23,14 @@
     </div>
   </div>
   <hr class="intro-divider">
-   
+  <center><h4 class="fancy-font-caption"> How I feel today... </h4></center>
+  <div class="container" style="border:ridge; padding: 24px">
+    <%= form_for(@tweet, url: tweets_path) do |f| %>
+       <%= f.label :content %>
+       <%= f.text_field :content %>
+       <%= f.submit "Post" %>
+     <% end %>
+  </div><br>
   <hr class="intro-divider">
   <div class="row">
     <center><h4 class="fancy-font-caption"> Inspiration </h4></center>

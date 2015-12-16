@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   root to: "welcome#index"
 
   resources :users
+  resources :tweets
+
+  post '/tweet/favorite', to: "tweets#favorite"
 
   get "/auth/twitter", as: :login
 
