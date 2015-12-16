@@ -17,6 +17,10 @@
  @import "materialize";
  @import url(https://fonts.googleapis.com/css?family=Lobster);
 
+
+#timeline {
+  overflow:auto;
+}
  .home-btn{
    background: transparent;
    border-style: solid;
@@ -44,7 +48,7 @@
 
 .fancy-font-caption{
   font-family: 'Lobster', serif;
-  font-size: 48px;
+  font-size: 36px;
 }
 
 
@@ -73,11 +77,11 @@
 .btn-group { display: inline-block; }
 
 .intro-divider {
-  width: 120px;
+  width: 240px;
 }
 
 .about-divider {
-  width: 240px;
+  width: 360px;
 }
 
 .gallery-pic {

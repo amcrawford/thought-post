@@ -7,7 +7,7 @@
       <div class="card" id="dashboard">
         <div style="margin-left:24px; margin-right:24px">
           <h2 class="fancy-font-caption center"> Your Timeline</h2>
-          <p>
+          <div id="timeline">
             <% @twitter.home_timeline.each do |tweet| %>
               <div class="card" style="border: solid">
                 <div class="row" style="margin-left:24px; margin-top:6px">
@@ -25,7 +25,7 @@
                 </div>
               </div>
             <% end %>
-          </p>
+          </div>
         </div>
       </div>
     </div>

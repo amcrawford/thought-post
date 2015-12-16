@@ -22,4 +22,12 @@ class TwitterService
     client.followers
   end
 
+  def following
+    client.following
+  end
+
+  def post_tweet(content)
+    client.update(content)
+  end
+
 end

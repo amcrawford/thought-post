@@ -1,21 +1,32 @@
 <div class="card">
   <!--  full side column -->
   <div class="row">
-    <div class="col s12"><br><br>
+    <div class="col s12">
       <!--  profile side column -->
-      <div class="row" >
+      <div class="row" style="left-margin: 24px">
+
+        <center><h4 class="fancy-font-caption"> About Me </h4></center>
+        <hr class="intro-divider"><br>
         <div class="col s2">
           <img src="<%= current_user.profile_image %>">
         </div>
-        <div class="col s10">
+
+        <div class="col s4">
           <b><%= current_user.name %></b><br> <em>@<%= current_user.screen_name %> </em>
         </div>
-      </div>
-      <div class="row" id="dashboard_info">
-        Tweets:  <%= @twitter.user_timeline.count %> <br>
-        Followers: <%= @twitter.followers.count %> <br>
-        Following:<br>
+
+        <div class="col s6" id="dashboard_info">
+          Tweets:  <%= @twitter.user_timeline.count %> <br>
+          Followers: <%= @twitter.followers.count %> <br>
+          Following: <%= @twitter.following.count %> <br>
+        </div>
       </div>
     </div>
+  </div>
+  <hr class="intro-divider">
+   
+  <hr class="intro-divider">
+  <div class="row">
+    <center><h4 class="fancy-font-caption"> Inspiration </h4></center>
   </div>
 </div>
