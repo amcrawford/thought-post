@@ -1,4 +1,4 @@
-<div class="card">
+<div class="">
   <!--  full side column -->
   <div class="row">
     <div class="col s12">
@@ -6,7 +6,7 @@
       <br><div class="row" style="left-margin: 24px">
         <hr class="intro-divider">
         <center><h4 class="fancy-font-caption"> About Me </h4></center>
-        <div class="col s2">
+        <div class="col s3">
           <img src="<%= current_user.profile_image %>">
         </div>
 
@@ -14,7 +14,7 @@
           <b><%= current_user.name %></b><br> <em>@<%= current_user.screen_name %> </em>
         </div>
 
-        <div class="col s6" id="dashboard_info">
+        <div class="col s5" id="dashboard_info">
           Tweets:  <%= @twitter.user_timeline.count %> <br>
           Followers: <%= @twitter.followers.count %> <br>
           Following: <%= @twitter.following.count %> <br>
@@ -33,6 +33,6 @@
   </div><br>
   <hr class="intro-divider">
   <div class="row">
-    <center><h4 class="fancy-font-caption"> Inspiration </h4></center>
+    <!-- <center><h4 class="fancy-font-caption"> Inspiration </h4></center> -->
   </div>
 </div>
