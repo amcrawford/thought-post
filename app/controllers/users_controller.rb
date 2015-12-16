@@ -1,11 +1,11 @@
 class UsersController < ApplicationController
 
   def index
-    # @client = (Octokit::Client.new(access_token: current_user.oauth_token))
+    @twitter = TwitterService.new(current_user)
   end
 
   def show
-    
+    @twitter = TwitterService.new(current_user)
   end
 
 end

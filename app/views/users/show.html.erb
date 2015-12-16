@@ -1,11 +1,27 @@
+<div class="container">
 <div class="row">
   <div class="card" id="dashboard">
-    <h2 class="fancy-font-caption center"> Your Dashboard</h2>
+    <div style="margin-left:24px; margin-right:24px">
+      <h2 class="fancy-font-caption center"> Your Tweets </h2>
       <p>
-        <h4 class="fancy-font-small"> Your Tweets </h4>
-        <% current_user.twitter.user_timeline(:count => 10).each do |tweet| %>
-        <%= tweet.text %>
+        <% @twitter.user_timeline.each do |tweet| %>
+        <div class="card" style="border:solid">
+          <div class="row" style="margin-left:24px; margin-top:6px">
+            <div class="col s1" style="">
+              <img src="<%= tweet.user.profile_image_url %>"><br>
+            </div>
+            <div class="col s2" style="margin-top:12px">
+              <b><%= tweet.user.screen_name %><br></b>
+            </div>
+            <div class="col s9" style="margin-top:10px">
+              <%= tweet.text %><br>
+            </div>
+          </div>
+        </div>
         <% end %>
       </p>
+    </div>
+
   </div>
+</div>
 </div>

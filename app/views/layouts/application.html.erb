@@ -16,8 +16,9 @@
       <li class="brand-logo white-text center fancy-font"> Thought Post</li>
         <ul id="nav-mobile" class="side-nav">
           <% if current_user %>
-            <li class="black-text">Logged in as: <%= current_user.name %>.</li>
-            <li><%= link_to "Dashboard", user_path(current_user) %></li>
+            <li class="black-text">Logged in as: <%= current_user.name %></li>
+            <li><%= link_to "Your Tweets", user_path(current_user) %></li>
+            <li><%= link_to "Your Timeline", users_path %></li>
             <li><%= link_to "Logout", logout_path %></li>
           <% else %>
             <li><%= link_to "Login with Twitter", login_path %></li>
@@ -29,7 +30,7 @@
     </div>
   </nav>
 
-<div class="container">
+<div class="">
     <%= yield %>
 </div>
 </body>
