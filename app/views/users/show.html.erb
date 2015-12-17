@@ -16,10 +16,10 @@
                   <img src="<%= tweet.user.profile_image_url %>"><br>
                 </div>
                 <div class="col s2" style="margin-top:12px">
-                  <b><%= tweet.user.screen_name %><br></b>
+                  <b><a href="<%= tweet.user.url%>" class="black-text"><%= tweet.user.screen_name %></a><br></b>
                 </div>
                 <div class="col s9" style="margin-top:10px">
-                  <em>"<%= tweet.text %>"</em><br>
+                  "<%= tweet.text %>"<br>
                 </div>
               </div>
             </div>
