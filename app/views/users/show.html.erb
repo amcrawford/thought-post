@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col s3">
+  <div class="col s3" id="sidebar">
     <%= render partial: 'partials/userside', locals: { twitter: @twitter, tweet: @tweet } %>
   </div>
 
@@ -19,7 +19,7 @@
                   <b><%= tweet.user.screen_name %><br></b>
                 </div>
                 <div class="col s9" style="margin-top:10px">
-                  <%= tweet.text %><br>
+                  <em>"<%= tweet.text %>"</em><br>
                 </div>
               </div>
             </div>

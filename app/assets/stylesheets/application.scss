@@ -74,7 +74,15 @@
 
 }
 
-.btn-group { display: inline-block; }
+
+.btn-group {
+
+ // margin-left: 0;
+ // margin-bottom: 0;
+ // padding: 2px 15px 5px;
+ // list-style: none;
+ display: inline-block;
+ }
 
 .intro-divider {
   width: 300px;
