@@ -43,4 +43,7 @@ class TwitterServiceTest < ActiveSupport::TestCase
      end
    end
 
+   # twitter.stubs(:update),returns(Twitter::Tweet).new(id:200)
+   # assert_euqal Twitter:Tweet, twitter.tweet("Tweet Test")
+
 end

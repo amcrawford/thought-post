@@ -6,6 +6,7 @@ require 'minitest/pride'
 require 'webmock'
 require 'vcr'
 require "simplecov"
+require 'mocha/mini_test'
 
 SimpleCov.start("rails")
 

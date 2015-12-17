@@ -15,7 +15,7 @@
                     <img src="<%= tweet.user.profile_image_url %>"><br>
                   </div>
                   <div class="col s2" style="margin-top:12px">
-                    <b><%= tweet.user.screen_name %><br></b>
+                    <b><a href="<%= tweet.user.url%>" class="black-text"><%= tweet.user.screen_name %></a><br></b>
                   </div>
                 <!-- </div> -->
                 <!-- <div class="row" style="margin-left:24px; margin-top:6px"> -->
@@ -31,8 +31,8 @@
                       </div>
                     </div>
                       <div class="card-action">
-                        <a href="<%= tweet_favorite_path(tweet: tweet.id) %>" data-method="post"> Favorite</a>
                         <a href="#"> <%= "Favorites: #{tweet.favorites_count}" %>  </a>
+                        <a href="<%= tweet_favorite_path(tweet: tweet.id) %>" data-method="post"> <i class="material-icons">thumb_up</i></a>
                       </div>
                   </div>
                 </div>

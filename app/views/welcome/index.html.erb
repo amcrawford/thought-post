@@ -1,3 +1,10 @@
-<div class="container">
-  <h1 class="fancy-font">Welcome!</h1>
+<div class="container"><br><br>
+    <center><h1 class="fancy-font">Welcome!</h1></center>
+    <% if current_user %>
+      <center> <h4 class="fancy-font-small"><em> See your latest inspiration! </em></h4> </center>
+      <center> <%= button_to "See Your Timeline", users_path, method: :get, class: 'btn home-btn black-text' %> </center>
+    <% else %>
+      <center> <h4 class="fancy-font-small"><em> Please login to continue. </em></h4> </center>
+      <center> <%= button_to "Login with Twitter", login_path, method: :get, class: 'btn home-btn black-text' %> </center>
+    <% end %>
 </div>
