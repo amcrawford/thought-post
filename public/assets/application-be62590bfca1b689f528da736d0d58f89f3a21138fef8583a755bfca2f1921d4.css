@@ -12719,28 +12719,36 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   height: 550px;
 }
 
-/* line 79, /Users/ambercrawford/turing/module_three/api-curious-twitter/app/assets/stylesheets/application.scss */
+/* line 78, /Users/ambercrawford/turing/module_three/api-curious-twitter/app/assets/stylesheets/application.scss */
+.home-btn {
+  background: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+
+/* line 86, /Users/ambercrawford/turing/module_three/api-curious-twitter/app/assets/stylesheets/application.scss */
 .btn-group {
   display: inline-block;
 }
 
-/* line 88, /Users/ambercrawford/turing/module_three/api-curious-twitter/app/assets/stylesheets/application.scss */
+/* line 95, /Users/ambercrawford/turing/module_three/api-curious-twitter/app/assets/stylesheets/application.scss */
 .intro-divider {
   width: 300px;
 }
 
-/* line 92, /Users/ambercrawford/turing/module_three/api-curious-twitter/app/assets/stylesheets/application.scss */
+/* line 99, /Users/ambercrawford/turing/module_three/api-curious-twitter/app/assets/stylesheets/application.scss */
 .about-divider {
   width: 360px;
 }
 
-/* line 96, /Users/ambercrawford/turing/module_three/api-curious-twitter/app/assets/stylesheets/application.scss */
+/* line 103, /Users/ambercrawford/turing/module_three/api-curious-twitter/app/assets/stylesheets/application.scss */
 .gallery-pic {
   width: 100%;
   height: auto;
 }
 
-/* line 101, /Users/ambercrawford/turing/module_three/api-curious-twitter/app/assets/stylesheets/application.scss */
+/* line 108, /Users/ambercrawford/turing/module_three/api-curious-twitter/app/assets/stylesheets/application.scss */
 #grayscale {
   filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
   /* Firefox 3.5+ */
@@ -12750,7 +12758,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   /* Chrome 19+ & Safari 6+ */
 }
 
-/* line 107, /Users/ambercrawford/turing/module_three/api-curious-twitter/app/assets/stylesheets/application.scss */
+/* line 114, /Users/ambercrawford/turing/module_three/api-curious-twitter/app/assets/stylesheets/application.scss */
 #grayscale:hover {
   filter: none;
   -webkit-filter: grayscale(30%);

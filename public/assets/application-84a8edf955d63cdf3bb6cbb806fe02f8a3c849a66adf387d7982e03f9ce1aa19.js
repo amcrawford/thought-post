@@ -17166,8 +17166,6 @@ $(document).ready(function(){
                 });
             }
         });
-
-    });
  }
 
 
