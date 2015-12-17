@@ -1,0 +1,192 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/account/verify_credentials.json?skip_status=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TwitterRubyGem/5.15.0
+      Authorization:
+      - OAuth oauth_consumer_key="80AMjrbSkCe3aXZVjmxcKRLM5", oauth_nonce="cb051cbd792d24340299ccdb776eca9b",
+        oauth_signature="bJ1fttybaeVLeSd0dTkzjRXgDOQ%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1450319079", oauth_token="47199626-SalEguuv6JMpqB4FwLJcC8zs6OaC51vXrSvTvwbnx",
+        oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '548'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Thu, 17 Dec 2015 02:24:39 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Thu, 17 Dec 2015 02:24:39 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_a
+      Set-Cookie:
+      - guest_id=v1%3A145031907950735593; Domain=.twitter.com; Path=/; Expires=Sat,
+        16-Dec-2017 02:24:39 UTC
+      - lang=en; Path=/
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - ed25c86b7509beae7ecd373f1aef549c
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '15'
+      X-Rate-Limit-Remaining:
+      - '14'
+      X-Rate-Limit-Reset:
+      - '1450319979'
+      X-Response-Time:
+      - '21'
+      X-Transaction:
+      - 1eaf41714b769dac
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      - BouncerExempt
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":47199626,"id_str":"47199626","name":"AMC","screen_name":"Amber__C","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":6,"friends_count":20,"listed_count":0,"created_at":"Sun
+        Jun 14 23:06:00 +0000 2009","favourites_count":46,"utc_offset":-18000,"time_zone":"Quito","geo_enabled":false,"verified":false,"statuses_count":5,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/2617777889\/7y3q1ssh4tno6zlc50ry_normal.jpeg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/2617777889\/7y3q1ssh4tno6zlc50ry_normal.jpeg","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false}'
+    http_version: 
+  recorded_at: Thu, 17 Dec 2015 02:24:39 GMT
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/followers/list.json?cursor=-1&user_id=47199626
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - TwitterRubyGem/5.15.0
+      Authorization:
+      - OAuth oauth_consumer_key="80AMjrbSkCe3aXZVjmxcKRLM5", oauth_nonce="61164dd6a2203ea62a30f304e96162ec",
+        oauth_signature="2nEcXsbdhrfcftIIYMEs9h6NyL8%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1450319079", oauth_token="47199626-SalEguuv6JMpqB4FwLJcC8zs6OaC51vXrSvTvwbnx",
+        oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '2829'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Thu, 17 Dec 2015 02:24:39 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Thu, 17 Dec 2015 02:24:39 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_a
+      Set-Cookie:
+      - guest_id=v1%3A145031907975231526; Domain=.twitter.com; Path=/; Expires=Sat,
+        16-Dec-2017 02:24:39 UTC
+      - lang=en; Path=/
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read-write
+      X-Connection-Hash:
+      - fcfa15f49765c8c4369200e0e9562522
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '15'
+      X-Rate-Limit-Remaining:
+      - '14'
+      X-Rate-Limit-Reset:
+      - '1450319979'
+      X-Response-Time:
+      - '129'
+      X-Transaction:
+      - 46c4e9ccba8dc793
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: ASCII-8BIT
+      string: '{"users":[{"id":40472591,"id_str":"40472591","name":"Jes Norris","screen_name":"JesChuckNorris","location":"Where
+        I should be...I think.","description":"Feminist. Nerd. Triplet. Creating worlds
+        for others enjoyment.","url":"https:\/\/t.co\/vy6XQ4SA4Z","entities":{"url":{"urls":[{"url":"https:\/\/t.co\/vy6XQ4SA4Z","expanded_url":"http:\/\/www.imdb.com\/name\/nm5338914\/?from_app=ios&ref_=ext_iosp_nm_imdbWS","display_url":"imdb.com\/name\/nm5338914\u2026","indices":[0,23]}]},"description":{"urls":[]}},"protected":false,"followers_count":305,"friends_count":330,"listed_count":8,"created_at":"Sat
+        May 16 14:33:42 +0000 2009","favourites_count":2642,"utc_offset":-18000,"time_zone":"Eastern
+        Time (US & Canada)","geo_enabled":false,"verified":false,"statuses_count":6896,"lang":"en","status":{"created_at":"Tue
+        Dec 15 23:35:11 +0000 2015","id":676908392686993408,"id_str":"676908392686993408","text":"More.
+        https:\/\/t.co\/E6eaoLmWPc","source":"\u003ca href=\"http:\/\/instagram.com\"
+        rel=\"nofollow\"\u003eInstagram\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[{"url":"https:\/\/t.co\/E6eaoLmWPc","expanded_url":"https:\/\/www.instagram.com\/p\/_VMKaAg1ZxVnN4x3Odep8B0wx2tcrmpPjLVX00\/","display_url":"instagram.com\/p\/_VMKaAg1ZxVn\u2026","indices":[6,29]}]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"9AE4E8","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/542972758\/BowtiesCoffee3.jpg","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/542972758\/BowtiesCoffee3.jpg","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/675471029381279744\/0xLgtTN5_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/675471029381279744\/0xLgtTN5_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/40472591\/1449879818","profile_link_color":"9266CC","profile_sidebar_border_color":"BDDCAD","profile_sidebar_fill_color":"DDFFCC","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"muting":false,"blocking":false,"blocked_by":false},{"id":370484538,"id_str":"370484538","name":"Iqbal
+        Ashary","screen_name":"IqbaIAshary","location":"JAKARTA PUSAT (INDONESIAN)","description":"modest,
+        simple and not sorts of kinds","url":"http:\/\/t.co\/mIy0stdCLA","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/mIy0stdCLA","expanded_url":"http:\/\/www.facebook.com\/iqbal.cikal","display_url":"facebook.com\/iqbal.cikal","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":356,"friends_count":986,"listed_count":0,"created_at":"Fri
+        Sep 09 03:12:30 +0000 2011","favourites_count":5,"utc_offset":-28800,"time_zone":"Pacific
+        Time (US & Canada)","geo_enabled":true,"verified":false,"statuses_count":1176,"lang":"id","status":{"created_at":"Tue
+        Jul 22 16:47:13 +0000 2014","id":491625522732859392,"id_str":"491625522732859392","text":"@amlc222
+        Hi","source":"\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter
+        Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"favorited":false,"retweeted":false,"lang":"und"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"515461","profile_background_image_url":"http:\/\/pbs.twimg.com\/profile_background_images\/434332915493642240\/H8rZRd9w.jpeg","profile_background_image_url_https":"https:\/\/pbs.twimg.com\/profile_background_images\/434332915493642240\/H8rZRd9w.jpeg","profile_background_tile":true,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/439399395021168640\/B41eCS1R_normal.jpeg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/439399395021168640\/B41eCS1R_normal.jpeg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/370484538\/1368773050","profile_link_color":"9BE4FA","profile_sidebar_border_color":"FFFFFF","profile_sidebar_fill_color":"585661","profile_text_color":"FF59C2","profile_use_background_image":true,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"muting":false,"blocking":false,"blocked_by":false},{"id":848291761,"id_str":"848291761","name":"Fat
+        Amy","screen_name":"AmyfatAmy","location":"","description":"I call myself
+        Fat Amy so twig bitches like you dont do it behind my back","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":152,"friends_count":453,"listed_count":0,"created_at":"Wed
+        Sep 26 23:09:36 +0000 2012","favourites_count":12,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":34,"lang":"en","status":{"created_at":"Thu
+        Jan 24 17:27:22 +0000 2013","id":294496630198112257,"id_str":"294496630198112257","text":"http:\/\/t.co\/G473l8qe","source":"\u003ca
+        href=\"http:\/\/www.apple.com\" rel=\"nofollow\"\u003ePhotos on iOS\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":1,"favorite_count":1,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[],"media":[{"id":294496630202306561,"id_str":"294496630202306561","indices":[0,20],"media_url":"http:\/\/pbs.twimg.com\/media\/BBZDH_bCEAExkdZ.jpg","media_url_https":"https:\/\/pbs.twimg.com\/media\/BBZDH_bCEAExkdZ.jpg","url":"http:\/\/t.co\/G473l8qe","display_url":"pic.twitter.com\/G473l8qe","expanded_url":"http:\/\/twitter.com\/AmyfatAmy\/status\/294496630198112257\/photo\/1","type":"photo","sizes":{"thumb":{"w":150,"h":150,"resize":"crop"},"large":{"w":308,"h":164,"resize":"fit"},"small":{"w":308,"h":164,"resize":"fit"},"medium":{"w":308,"h":164,"resize":"fit"}}}]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"und"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/2653443054\/e3fd4a283af9288cde2255db0d0daea5_normal.jpeg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/2653443054\/e3fd4a283af9288cde2255db0d0daea5_normal.jpeg","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"muting":false,"blocking":false,"blocked_by":false},{"id":71281979,"id_str":"71281979","name":"SMCMLOL","screen_name":"SMCMLOL","location":"www.smcmlol.blogspot.com","description":"A
+        twitter for the SMCM LOL BLOG","url":"http:\/\/t.co\/d7VM6Y3QqV","entities":{"url":{"urls":[{"url":"http:\/\/t.co\/d7VM6Y3QqV","expanded_url":"http:\/\/www.smcmlol.blogspot.com","display_url":"smcmlol.blogspot.com","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":542,"friends_count":600,"listed_count":5,"created_at":"Thu
+        Sep 03 15:34:58 +0000 2009","favourites_count":337,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":740,"lang":"en","status":{"created_at":"Wed
+        Dec 10 05:25:20 +0000 2014","id":542550609703235587,"id_str":"542550609703235587","text":"RT
+        @tidalbulges: Kinda wanna have lunch with my advisor","source":"\u003ca href=\"http:\/\/www.tweetcaster.com\"
+        rel=\"nofollow\"\u003eTweetCaster for Android\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":{"created_at":"Wed
+        Oct 15 15:59:12 +0000 2014","id":522416408077303810,"id_str":"522416408077303810","text":"Kinda
+        wanna have lunch with my advisor","source":"\u003ca href=\"http:\/\/twitter.com\/download\/iphone\"
+        rel=\"nofollow\"\u003eTwitter for iPhone\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":1,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"},"retweet_count":1,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/730211777\/-1_normal.png","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/730211777\/-1_normal.png","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"muting":false,"blocking":false,"blocked_by":false},{"id":247466379,"id_str":"247466379","name":"Heather
+        Johnston","screen_name":"hjohnston714","location":"","description":"Is it
+        too early to ask how you like your eggs?","url":null,"entities":{"description":{"urls":[]}},"protected":true,"followers_count":35,"friends_count":85,"listed_count":0,"created_at":"Fri
+        Feb 04 21:23:32 +0000 2011","favourites_count":59,"utc_offset":-18000,"time_zone":"Quito","geo_enabled":true,"verified":false,"statuses_count":635,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"BADFCD","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme12\/bg.gif","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme12\/bg.gif","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/3305178648\/19186e322c0c34c6c828a198cb4943ba_normal.jpeg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/3305178648\/19186e322c0c34c6c828a198cb4943ba_normal.jpeg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/247466379\/1359943207","profile_link_color":"FF0000","profile_sidebar_border_color":"F2E195","profile_sidebar_fill_color":"FFF7CC","profile_text_color":"0C3E53","profile_use_background_image":true,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"muting":false,"blocking":false,"blocked_by":false},{"id":49395789,"id_str":"49395789","name":"Toni","screen_name":"Kodak_smil82860","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":96,"friends_count":633,"listed_count":1,"created_at":"Sun
+        Jun 21 19:04:02 +0000 2009","favourites_count":0,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":1,"lang":"en","status":{"created_at":"Mon
+        Jun 22 08:00:30 +0000 2009","id":2276347077,"id_str":"2276347077","text":"Watch
+        Tv On Your Pc See http:\/\/bit.ly\/5aeAG5 :]hello everyone hope ya have a
+        great day!","source":"\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter
+        Web Client\u003c\/a\u003e","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"geo":null,"coordinates":null,"place":null,"contributors":null,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[]},"favorited":false,"retweeted":false,"lang":"en"},"contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"C0DEED","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/276106830\/9_normal.jpeg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/276106830\/9_normal.jpeg","profile_link_color":"0084B4","profile_sidebar_border_color":"C0DEED","profile_sidebar_fill_color":"DDEEF6","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":false,"default_profile":true,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"muting":false,"blocking":false,"blocked_by":false}],"next_cursor":0,"next_cursor_str":"0","previous_cursor":0,"previous_cursor_str":"0"}'
+    http_version: 
+  recorded_at: Thu, 17 Dec 2015 02:24:39 GMT
+recorded_with: VCR 3.0.0

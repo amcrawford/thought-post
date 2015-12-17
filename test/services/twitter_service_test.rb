@@ -19,4 +19,28 @@ class TwitterServiceTest < ActiveSupport::TestCase
    end
   end
 
+  test "#followed_tweets" do
+    VCR.use_cassette("twitter_service#followed_tweets") do
+      tweets = service.home_timeline
+      tweet = tweets.first
+
+      assert_equal 20, tweets.count
+      assert tweet[:text].include?("Yoga teachers")
+    end
+   end
+
+   test "#followers_count" do
+     VCR.use_cassette("twitter_service#followers_count") do
+
+       assert_equal 6, service.followers.count
+     end
+   end
+
+   test "#following_count" do
+     VCR.use_cassette("twitter_service#following_count") do
+
+       assert_equal 20, service.following.count
+     end
+   end
+
 end

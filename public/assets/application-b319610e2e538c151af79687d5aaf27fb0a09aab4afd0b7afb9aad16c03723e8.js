@@ -17147,6 +17147,8 @@ $(document).ready(function(){
      $(".button-collapse").sideNav();
      $('.modal-trigger').leanModal();
      $('.slider').slider({full_width: true, interval: 7500});
+     $('.scrollspy').scrollSpy();
+ });
 
         var $sidebar   = $("#sidebar"),
             $window    = $(window),
