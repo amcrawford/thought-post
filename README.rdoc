@@ -2,6 +2,4 @@
 
 Turing School project to create app with similar functionality to Twitter using Twitter API.
 
-
-Waffle: https://waffle.io/amcrawford/thought-post
 Heroku: https://thought-post.herokuapp.com 
