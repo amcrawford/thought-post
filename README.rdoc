@@ -2,4 +2,4 @@
 
 Turing School project to create app with similar functionality to Twitter using Twitter API.
 
-Heroku: https://thought-post.herokuapp.com 
+Hosted Application: https://thought-post.herokuapp.com 
