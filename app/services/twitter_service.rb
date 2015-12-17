@@ -34,4 +34,8 @@ class TwitterService
     client.favorite(tweet)
   end
 
+  def trends
+    client.trends(id = 1, options = {}).attrs[:trends][1..3]
+  end
+
 end

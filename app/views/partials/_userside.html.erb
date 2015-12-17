@@ -33,6 +33,10 @@
   </div><br>
   <hr class="intro-divider">
   <div class="row">
-    <!-- <center><h4 class="fancy-font-caption"> Inspiration </h4></center> -->
+    <center><h4 class="fancy-font-caption"> Trending Thoughts </h4></center>
+    <% @twitter.trends.each do |trend| %>
+      <center><a href="<%= trend[:url] %>"><%= trend[:name] %></a></center>
+    <% end %>
+    <hr class="intro-divider">
   </div>
 </div>
