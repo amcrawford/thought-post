@@ -1,7 +1,7 @@
 == README
 
-Turing School project to create app with similar functionality to Twitter using Twitter API.
+Individual project consuming Twitter API to create news feed with "post" and "favorite" functionality.
 
+Project Stack: Rails, Ruby, MaterializeCSS, TwitterOauth, Minitest
 
-Waffle: https://waffle.io/amcrawford/thought-post
-Heroku: https://thought-post.herokuapp.com 
+Hosted Application: https://thought-post.herokuapp.com 
