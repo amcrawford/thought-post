@@ -26,22 +26,22 @@
         </div>
       </div>
     </div>
-  </div>
-  <hr class="intro-divider">
-  <center><h4 class="fancy-font-caption"> How I feel today... </h4></center>
-  <div class="container" style="border:ridge; padding: 36px">
-    <%= form_for(@tweet, url: tweets_path) do |f| %>
-       <%= f.label :content %>
-       <%= f.text_field :content %>
-       <%= f.submit "Post" %>
-     <% end %>
-  </div><br>
-  <hr class="intro-divider">
-  <div class="row">
-    <center><h4 class="fancy-font-caption"> Trending Thoughts </h4></center>
-    <% @twitter.trends.each do |trend| %>
-      <center><a href="<%= trend[:url] %>"><%= trend[:name] %></a></center>
-    <% end %>
     <hr class="intro-divider">
+    <center><h4 class="fancy-font-caption"> How I feel today... </h4></center>
+    <div class="container" style="border:ridge; padding: 36px">
+      <%= form_for(@tweet, url: tweets_path) do |f| %>
+      <%= f.label :content %>
+      <%= f.text_field :content %>
+      <%= f.submit "Post" %>
+      <% end %>
+    </div><br>
+    <hr class="intro-divider">
+    <div class="row">
+      <center><h4 class="fancy-font-caption"> Trending Thoughts </h4></center>
+      <% @twitter.trends.each do |trend| %>
+      <center><a href="<%= trend[:url] %>"><%= trend[:name] %></a></center>
+      <% end %>
+      <hr class="intro-divider">
+    </div>
   </div>
 </div>
