@@ -5,19 +5,24 @@
       <!--  profile side column -->
       <br><div class="row" style="left-margin: 24px">
         <hr class="intro-divider">
-        <center><h4 class="fancy-font-caption"> About Me </h4></center>
-        <div class="col s2">
-          <img src="<%= current_user.profile_image %>">
+        <div class="row" id="about-me-header">
+          <div class="col s2 offset-s1" style="padding-top: 10px">
+            <img src="<%= current_user.profile_image %>" class="circle">
+          </div>
+          <div class="col s9">
+            <h4 class="fancy-font-caption">  About Me</h4>
+          </div>
         </div>
+        <div class="row" id="about-me-info">
+          <div class="col s5 offset-s1" id="username_info">
+            <b><%= current_user.name %></b><br> <em>@<%= current_user.screen_name %> </em>
+          </div>
 
-        <div class="col s5">
-          <b><%= current_user.name %></b><br> <em>@<%= current_user.screen_name %> </em>
-        </div>
-
-        <div class="col s5" id="dashboard_info">
-          Tweets:  <%= @twitter.user_timeline.count %> <br>
-          Followers: <%= @twitter.followers.count %> <br>
-          Following: <%= @twitter.following.count %> <br>
+          <div class="col s6" id="dashboard_info">
+            Tweets:  <%= @twitter.user_timeline.count %> <br>
+            Followers: <%= @twitter.followers.count %> <br>
+            Following: <%= @twitter.following.count %>
+          </div>
         </div>
       </div>
     </div>
