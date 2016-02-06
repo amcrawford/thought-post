@@ -1,7 +1,7 @@
 <div class="application-body" id="welcome-page"><br><br>
     <center><h1 class="fancy-font">Welcome!</h1></center>
     <% if current_user %>
-      <center> <h4 class="fancy-font-small"> See your latest inspiration! </h4> </center>
+      <center> <h4 class="fancy-font-small"> See your latest inspiration... </h4> </center>
       <center> <%= button_to "See Your Timeline", users_path, method: :get, class: 'btn home-btn black-text' %> </center>
     <% else %>
       <center> <h4 class="fancy-font-small"><em> Please login to continue. </em></h4> </center>
